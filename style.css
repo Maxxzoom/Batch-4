@@ -1,0 +1,81 @@
+/* External style */
+
+/* Lowest priority */
+/* div {
+  background-color: yellow;
+
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* paragraph */
+
+* {
+  font-family: "Montserrat", serif;
+}
+p {
+  font-size: 10px;
+}
+a {
+  color: tomato;
+  background-color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+ul.a {
+  list-style: upper-latin;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 100%;
+}
+th {
+  height: 70px;
+}
+td {
+  height: 70px;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 20px;
+}
+
+td:hover{
+  background-color: coral;
+}
+.maincontainer{
+  /* position: sticky; */
+  /* bottom: 0; */
+}
+
+.zindex img{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  object-fit: contain;
+}
+
+.zindex h2,p{
+  color: tomato;
+}
+
+
+/* Css combinators */
+
+/* There are 4 types of css combinator */
+
+/* Descendant combinator (space) */
+/* Child combinator (>) */
+/* Next Sibling combinator (+) */
+/* Subsequent Sibling combinator */
+
+
