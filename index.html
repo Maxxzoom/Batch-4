@@ -1,11 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+<html>
+  <head>
+    <title>My first web page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="amazonwebsite" content="amazon.com" />
+    <meta name="amazonwebsite" content="amazon.in" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 3 ways of defining style -->
+
+    <!-- External style -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- Internal style -->
+
+    <!-- Second Highest priority -->
+    <style>
+      /* css selectors */
+
+      /* Tag Name */
+      /* div {
+        background-color: blue;
+      } */
+
+      /* Class Name */
+      /* .container {
+        background-color: brown;
+      } */
+
+      /* ID name (unique) */
+      /* #containerdiv {
+        background-color: purple;
+      } */
+
+      /* Universal Selector */
+      /* reset the style */
+      /* * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", serif;
+      } */
+
+      /* Grouping Selector */
+      /* h1,
+      h2,
+      h3 {
+        color: orange;
+        background-color: aqua;
+      } */
+
+      /* div {
+        border: 1px solid black;
+        outline: 5px solid rosybrown;
+        padding: 10px;
+        margin: 20px;
+        background-color: rgb(222, 44, 65);
+        color: aqua;
+        height: 200px;
+        width: 200px;
+        font-family: "Montserrat", serif;
+      } */
+
+      /* Descendant Selector */
+      /* div p {
+        background-color: yellow;
+      } */
+
+      /* Child Selector (>) */
+      /* is used to select an element that is all elements inside another specific element */
+      /* section > p {
+        background-color: yellow;
+      } */
+
+      /* Next Sibling/Adjacent Sibling Selector (+) */
+      /* is used to select an element thet is after another specific element */
+
+      /* div + p {
+        background-color: yellow;
+      } */
+
+      /* Subsquent Sibling Selector (~) */
+      /* is used to select all the elements that are after another specific element */
+      /* div ~ p {
+        background-color: yellow;
+      } */
+
+      /* Psuedo classes */
+      /* a:hover {
+        background-color: blueviolet;
+      }
+      a:link {
+        color: tomato;
+      }
+      a:visited {
+        color: #74c0fc;
+      }
+      a:active {
+        color: black;
+      } */
+
+      /* p:first-child {
+        background-color: sandybrown;
+      }
+      p:last-child {
+        background-color: sandybrown;
+      } */
+      /* p:nth-child(odd) {
+        background-color: gold;
+      } */
+
+      /* Pseudo Elements */
+      /* is used to style specifi part of an element */
+      /* syntax */
+
+      /* selector::pseudo element{
+      property:value
+      } */
+
+      /* p:hover::first-line {
+        background-color: yellow;
+        color: red;
+        font-variant: small-caps;
+      }
+      p:hover::first-letter {
+        text-transform: capitalize;
+        color: red;
+      } */
+      /* h2::before {
+        content: "#";
+        color: red;
+      }
+
+      h2::after{
+        content: "😎";
+      } */
+
+      ul li::marker,
+      ol li::marker {
+        color: tomato;
+      }
+
+      p::selection{
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Psuedo elements -->
+    <p>
+      rorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius
+      nemo numquam maxime cumque quisquam fugiat iusto voluptatibus! Atque,
+      quasi natus sit facere veniam at deserunt facilis laboriosam numquam
+      aperiam.
+    </p>
+
+    <h2>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, fugiat.
+    </h2>
+
+    <ul>
+      <li>Sun</li>
+      <li>Mon</li>
+      <li>Tue</li>
+    </ul>
+    <ol>
+      <li>Sun</li>
+      <li>Mon</li>
+      <li>Tue</li>
+    </ol>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod itaque quae
+      natus voluptatibus corporis? Corporis eius temporibus in. Deserunt,
+      asperiores? Eos sequi voluptatum alias placeat praesentium consequuntur
+      quam corporis nam?
+    </p>
+    <!-- Psuedo classes -->
+
+    <!-- A pseudo class is used to define a special state of an element -->
+
+    <!-- Syntax -->
+    <!-- selector:pseudo-class { property:value } -->
+
+    <!-- <p>Para 2</p>
+    <p>Para 2</p>
+    <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+      <p>Inside div Para 2</p>
+    </div> -->
+    <!-- Descendant Selector(space) -->
+    <!-- <p>Para 2</p>
+    <div>
+      <p>Para 1</p>
+      <p>Para 2</p>
+    </div> -->
+
+    <!-- Child Selector (>) -->
+    <!-- <p>Para 2</p>
+    <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+
+      <section>
+        <p>Inside section Para 1</p>
+        <p>Inside section Para 2</p>
+      </section>
+    </div> -->
+
+    <!-- Next Sibling/Adjacent Sibling Selector (+) -->
+    <!-- <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+    </div>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+    </div>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <p>Para 2</p> -->
+
+    <!-- Subsquent Sibling Selector (~) -->
+    <!-- <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+    </div>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <div>
+      <p>Inside div Para 1</p>
+      <p>Inside div Para 2</p>
+    </div>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <p>Para 2</p>
+    <p>Para 2</p> -->
+
+    <!-- Inline style -->
+
+    <!-- <header style="background-color: red; color: black">Header</header> -->
+    <!-- <div class="container box" id="containerdiv">div</div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, velit.
+    </p>
+
+    <i class="fa-brands fa-facebook fa-bounce" style="color: #74c0fc"></i>
+    <i class="fa-solid fa-house fa-beat"></i>
+
+    <a href="">Link</a>
+
+    <ul class="a">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <ul class="b">
+      <li>Toyota</li>
+      <li>Audi</li>
+      <li>Honda</li>
+    </ul>
+    <ol type="I">
+      <li>Toyota</li>
+      <li>Audi</li>
+      <li>Honda</li>
+    </ol> -->
+
+    <!-- <table>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+    </table> -->
+    <!-- <div class="maincontainer">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem,
+      voluptatibus! maincontainer data
+    </div> -->
+
+    <!-- <div class="zindex">
+      <h2>This is a heading</h2>
+      <img src="https://th.wallhaven.cc/lg/qz/qz13pl.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda,
+        delectus.
+      </p>
+    </div> -->
+    <!-- <footer style="background-color: tan">Footer</footer> -->
+
+    <!-- Texting Tags -->
+
+    <!-- <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6> -->
+
+    <!-- This is paragraph -->
+    <!-- <p>
+      This is a <sup>This is Superscript Text</sup> paragraph Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Possimus voluptas fuga vel, eum
+      deleniti commodi perspiciatis ipsa ad quis molestias, id consectetur eos
+      quibusdam dolorem veritatis nam quae corporis iure sed ex veniam incidunt.
+      Labore dolorum tenetur quidem dolores atque optio maxime sed praesentium
+      et, minus voluptatibus veritatis porro officiis magni est quae vero
+      laboriosam! Eius vitae tenetur odit, repudiandae, totam rem porro dolor
+      recusandae sapiente libero aperiam inventore repellat doloremque dolorum
+      placeat! Doloribus, repellendus reiciendis laboriosam rerum saepe nam
+      voluptate, inventore asperiores pariatur corporis itaque laudantium ipsum
+      ex officiis? Voluptatem esse distinctio, sed necessitatibus officiis unde
+      repellendus accusantium eum!
+    </p>
+    <b>This is bold</b>
+    <i>This is italic</i>
+    <mark> This is mark</mark>
+    <small>This is small</small>
+    <del>This is delete</del>
+    <sub>This is subscript text</sub>
+    <ins>This is inserted Text</ins> -->
+    <!-- <table class="table" id="tableid">
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wedbesday</th>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+    </table>
+
+    <ul>
+      <li>Text1</li>
+      <li>Text1</li>
+      <li>Text1</li>
+      <li>Text1</li>
+    </ul>
+    <ol type="i">
+      <li>Text1</li>
+      <li>Text1</li>
+      <li>Text1</li>
+      <li>Text1</li>
+    </ol> -->
+
+    <!-- Quatation and citation elements -->
+    <!-- Quatation elements-->
+    <!-- <blockquote>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+      quis.
+    </blockquote>
+    <q
+      >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni incidunt
+      amet assumenda consectetur velit?</q
+    > -->
+    <!-- address title -->
+    <!-- <address></address> -->
+
+    <!-- work title -->
+    <!-- <cite
+      >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam debitis
+      officiis distinctio totam nobis obcaecati tenetur ullam quia optio
+      voluptate error, cumque accusamus excepturi enim doloribus mollitia
+      suscipit eius sunt?</cite
+    >
+-->
+    <!-- <audio src="/cartoon.mp4" controls></audio>
+    <video
+      src="/cartoon.mp4"
+      controls
+      style="height: 200px; width: 200px"
+    ></video> -->
+
+    <!-- <iframe
+      src="https://www.youtube.com/watch?v=UB1O30fR-EE"
+      style="height: 200px; width: 200px"
+      controls
+      frameborder="0"
+    >
+    </iframe> -->
+
+    <!-- <a href="https://www.google.com/" target="_blank">
+      <img src="https://th.wallhaven.cc/lg/qz/qz13pl.jpg" />
+    </a>
+    <a href="https://www.google.com/" target="_blank">
+      <img src="https://th.wallhaven.cc/lg/ex/exkg7w.jpg" />
+    </a>
+    <a href="https://www.google.com/" target="_blank">
+      <img src="https://th.wallhaven.cc/small/zy/zywe5j.jpg" />
+    </a>
+    <a href="https://www.maxxzoom.com">maxxzoom.com</a> -->
+
+    <!-- Block elements -->
+    <!-- always start on the new line -->
+    <!-- <div class="box boxshadow" id="box1"></div>
+
+    <header class="box boxshadow">Header</header>
+    <footer class="box boxshadow">Footer</footer>
+    <section class="box boxshadow">Section</section>
+    <table class="box boxshadow">
+      <tr>
+        <td>Table</td>
+      </tr>
+    </table>
+    <nav class="box boxshadow">Nav</nav>
+    <main class="box boxshadow">Main</main> -->
+
+    <!-- inline elements -->
+    <!-- does not start new line -->
+    <!-- <button>Button</button>
+    <input type="text" />
+    <small>Small</small>
+    <sup>Sup</sup>
+    <sub>Sub</sub>
+    <span>Span Text</span>
+    <i></i>
+    <img src="" alt="" />
+    <strong>Strong</strong> -->
+
+    <!-- Attributes -->
+    <!-- it will provide some additoinal information about the element -->
+  </body>
 </html>
