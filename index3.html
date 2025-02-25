@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- external style -->
+    <link rel="stylesheet" href="../styles/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Cascading style sheets -->
+  <!-- use to style an html document -->
+  <!-- use to describes how our element want to display -->
+
+  <!-- 3 way to use css -->
+  <!-- internal style Mid level priority -->
+  <!-- inline style  Highest priority-->
+  <!-- external style  Lowest priority-->
+  <style>
+    /* <!-- internal style --> */
+    /* p {
+        color: red;
+      background-color: yellow;
+      font-size: 20px;
+    }
+    .para {
+      color: tan;
+      background-color: tomato;
+    }
+    #test{
+        color: rgb(218, 233, 3);
+        background-color: rgb(250, 16, 16);
+        } */
+
+    p {
+      /* <!-- Box model --> */
+      /* <!-- All the html elements can be considered as a boxes --> */
+      /* it consist of content, padding, margin and border */
+
+      color: burlywood;
+      border: 5px solid black;
+      outline: 3px solid red;
+      margin: 40px;
+      padding: 40px;
+      width: 50vw;
+      height: fit-content;
+      font-size: 22px;
+      font-family: "Grechen Fuemen", serif;
+
+      /* 16px = 1rem */
+    }
+    .referencelink {
+      color: red;
+      background: yellow;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    ul li {
+      list-style: lower-alpha;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid;
+      border-collapse: collapse;
+      padding: 10px;
+      margin: 10px;
+    }
+    /* display types */
+    /* disply grid,flex, inline , inline-block, block */
+
+    div.sp1 {
+      width: 500px;
+      border: 1px solid red;
+    }
+    div.sp2 {
+      max-width: 700px;
+      min-width: 300px;
+      border: 1px solid red;
+    }
+
+    .img1 {
+      position: absolute;
+      top: 10px;
+      z-index: -1;
+      opacity: 0.5;
+    }
+    .img2 {
+      position: absolute;
+      top: 100px;
+      z-index: 1;
+    }
+    /* h1{
+      z-index: 2;
+    } */
+
+    /* Combinator 4 types */
+
+    /* Descendant combinator (space) */
+    /* it will select all elements that are descendant of a specified element */
+    /* div p {
+      background-color: red;
+    } */
+
+    /* Child  combinator(>)*/
+
+    /* div > p{
+      background-color: yellow;
+    } */
+
+    /* Next sibling combinator(+) */
+    /* div + p {
+      background-color: yellow;
+    } */
+    
+    /* Subsquent-sibling combinator(~) */
+    div ~ p {
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <section>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+      </section>
+    </div> -->
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+        ducimus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+        ducimus.
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ducimus.
+    </p>
+
+    <!-- lowest priority will be tag -->
+    <!-- (lowest) tag < class < id < inline style(highest) -->
+    <!-- inline style -->
+    <!-- <a class="referencelink" href="index.html">Home</a>
+    <div class="sp1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      praesentium esse officia unde commodi nihil ipsam excepturi dolorem
+      quibusdam repellendus.
+    </div>
+    <div class="sp2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      praesentium esse officia unde commodi nihil ipsam excepturi dolorem
+      quibusdam repellendus.
+    </div> -->
+
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, cumque?
+    </h1>
+    <img class="img1" src="https://th.wallhaven.cc/lg/jx/jxm1mw.jpg" alt="" />
+    <!-- <img class="img2" src="https://th.wallhaven.cc/lg/ex/exj7kl.jpg" alt="" /> -->
+    <!-- <table>
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+    </table> -->
+
+    <!-- 
+    <ul>
+      <li>Mon</li>
+      <li>Tue</li>
+      <li>Wed</li>
+    </ul>
+
+    <ol type="i">
+      <li>Mon</li>
+      <li>Tue</li>
+      <li>Wed</li>
+    </ol> -->
+
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum
+      pariatur reiciendis tempora eveniet? Eum fuga veniam nihil modi quidem
+      tempore, neque cum inventore illum laudantium praesentium in accusantium
+      vel! Provident cum enim, harum rem laboriosam consequuntur ducimus
+      deserunt commodi hic labore laudantium ullam consectetur facere doloribus
+      omnis eos aliquid, reprehenderit perferendis eum sint recusandae?
+      Expedita, itaque vitae doloremque consequuntur veniam assumenda quo
+      aspernatur reprehenderit odit! Voluptas quas iusto repellendus perferendis
+      quaerat! Debitis, inventore laboriosam a magni iste fugit, labore
+      voluptate eius, ullam nihil necessitatibus quia minus molestiae.
+      Reprehenderit laboriosam dolor nesciunt. Provident modi vitae laboriosam
+      laudantium suscipit quam tempora! Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Perspiciatis assumenda quas recusandae minima! Animi
+      suscipit
+    </p> -->
+  </body>
+</html>
