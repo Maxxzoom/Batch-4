@@ -1,0 +1,109 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --background-color: #0b1929;
+  --padding: 10px;
+}
+
+/* Reset style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+body {
+  /* background-color: var(--background-color); */
+  display: flex;
+  flex-direction: column;
+  /* color: var(--primary-color); */
+}
+
+/* Navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  padding: 15px 20px;
+  color: var(--primary-color);
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+}
+
+/* Hamburger menu */
+#menu-checkbox {
+  display: none;
+}
+.menu-toggle {
+  display: none;
+}
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 5px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  #menu-checkbox:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 769) and(max-width: 1080px) {
+  .nav-links {
+    flex-direction: row;
+  }
+  
+}
