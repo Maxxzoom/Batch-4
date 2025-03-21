@@ -4,34 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+
   </head>
   <body>
-    <!-- Navigation menu -->
+    <!-- header/navbar -->
     <nav class="navbar">
-      <a href="index.html">
-        <div class="logo">My site</div>
+      <a href="index.html" class="logo_anchor">
+        <div class="logo">MySite</div>
       </a>
 
       <input type="checkbox" id="menu-checkbox" />
-      <label class="menu-toggle" for="menu-checkbox">
+      <label for="menu-checkbox" class="menu-toggle">
         <div></div>
         <div></div>
         <div></div>
       </label>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="news.html">News</a></li>
+        <li><a href="projects.html">Projects</a></li>
       </ul>
     </nav>
 
-    <div class="container">Main content</div>
+    <!-- Main content -->
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <img
+            src="https://th.wallhaven.cc/lg/gp/gporqq.jpg"
+            class="carousel-item"
+            alt=""
+          />
+          <img
+            src="https://th.wallhaven.cc/lg/jx/jxm1mw.jpg"
+            class="carousel-item"
+            alt=""
+          />
+          <img
+            src="https://th.wallhaven.cc/lg/ex/exj7kl.jpg"
+            class="carousel-item"
+            alt=""
+          />
+          <img
+            src="https://th.wallhaven.cc/lg/qz/qz13pl.jpg"
+            class="carousel-item"
+            alt=""
+          />
+        </div>
+      </div>
 
-    <!-- footer -->
-    <footer>Footer</footer>
+      
+    </div>
 
-    <script></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>We Provide top-natch web developement services</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="news.html">News</a>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Instagram</a>
+          <a href="">Linkedin</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 MySite. All Rights Reserved</div>
+    </footer>
+
+    <script>
+      let currentIndex = 0;
+      function slideCarousel() {
+        const carouselInner = document.querySelector(".carousel-inner");
+        const totalSlides = document.querySelectorAll(".carousel-item").length;
+
+        currentIndex = (currentIndex + 1) % totalSlides;
+        carouselInner.style.transform = `translateX( -${currentIndex * 100}% ) `;
+      }
+
+      setInterval(slideCarousel, 3000);
+    </script>
   </body>
 </html>
