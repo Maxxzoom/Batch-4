@@ -2,10 +2,10 @@
 
 /* Types of css */
 
-/* internal style - lowest priority */
 
-/* external style -  Middle priority */
 
+/* external style -  lowest priority */
+/* internal style - middle priority */
 /* inline style - Highest priority */
 
 h1 {
@@ -31,7 +31,22 @@ h1 {
 
 div {
   border: 2px solid tomato;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+  /* flex-direction: column; */
+  width: 100%;
+  height: 80vh;
+  /* position: relative; */
   /* padding: 20px; */
+}
+span {
+  /* position: initial; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* width: 33%; */
 }
 h1 {
   /* border: 2px solid rgb(45, 43, 192); */
@@ -45,6 +60,7 @@ h1 {
   /* 16px = 1rem */
   overflow: auto;
   border-radius: 20px;
+  /* opacity: 0.2; */
 }
 
 img {
@@ -52,14 +68,118 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  height: 50vh;
-  width: 50vw;
-  opacity: 0.7;
+  /* height: 50vh; */
+  /* width: 50vw; */
+  /* opacity: 0.7; */
   /* 0 to 1 */
+
+  /* display: none; */
+  /* display: flex; */
+  /* display: block; */
+  /* display: inline-block; */
+  /* overflow: hidden; */
 }
 
 /* display */
+
 /* position */
+
 /* Combinators */
-/* Pseudo class */
+/* 4 types of combinators */
+/* Descendant combinator (space) */
+/* div span {
+  color: red;
+  background-color: yellow;
+} */
+
+/* Child combinator (>) */
+/* div > span{
+  color: red;
+  background-color: yellow;
+} */
+
+/* Next sibling combinator (+) */
+/* div + span{
+  color: red;
+  background-color: yellow;
+}  */
+
+/* Subsequent sibling combinator(~) */
+/* div ~ span{
+  color: red;
+  background-color: yellow;
+}  */
+
+
+/* Pseudo classes */
+/* selector:pseudo-class{
+  property:value
+} */
+/* div{
+  color: red;
+  background-color: yellow;
+} */
+
+/* a:visited{
+  color: brown;
+}
+.anchor:hover{
+  color: tomato;
+}
+#fb:hover{
+  color: blue;
+}
+a:active{
+  color: yellow;
+} */
+/* div:hover span{
+  color: yellow;
+  background-color: red;
+} */
+
+/* id - highest */
+/* #sp{
+  color: tomato;
+} */
+
+/* lowest */
+/* span{
+  color: red;
+} */
+
+/* middle */
+/* .randomtext{
+  color: yellow;
+} */
+
+
+
 /* Pseudo Elements */
+/* selector::pseudo-elements{
+  property:value
+} */
+/* .randomtext::before{
+  content: "🎈";
+}
+.randomtext::after{
+  content: "🎈";
+} */
+
+/* .randomtext::first-line{
+  color: yellow;
+  background-color: red;
+} */
+/* .randomtext::first-letter{
+  color: rgb(45, 146, 153);
+} */
+.randomtext::selection{
+  color: yellow;
+  background-color: red;
+}
+::marker{
+  color: rgb(255, 217, 0);
+}
+.input1::placeholder{
+  color: red;
+  font-size: 0.5rem;
+}
