@@ -1,0 +1,65 @@
+/* Cascading Style Sheets */
+
+/* Types of css */
+
+/* internal style - lowest priority */
+
+/* external style -  Middle priority */
+
+/* inline style - Highest priority */
+
+h1 {
+  /* property:value; */
+  /* color: #dff614;
+  background-color: #00cbff;
+  height: 400px;
+  width: 600px; */
+  /* border: red 2px solid;
+  border-radius: 10px; */
+  /* padding: 10px 20px 30px 40px; */
+  /* padding: 10px 30px;
+  margin: 30px;
+  margin: 20px 30px; */
+  /* margin: 20px 30px 40px; */
+}
+/* top & bottom  and left & right  - 2 values*/
+/* top  and left & right and bottom - 3 values */
+/* top,right,bottom,left  - 4 values*/
+
+/* Box model */
+/* content, border, padding, margin  */
+
+div {
+  border: 2px solid tomato;
+  /* padding: 20px; */
+}
+h1 {
+  /* border: 2px solid rgb(45, 43, 192); */
+  outline: 2px solid rgb(255, 0, 0);
+  margin: 20px;
+  /* height: 400px; */
+  /* height: 20rem; */
+  /* height: 20%; */
+  height: 50vh;
+  /* viewheight */
+  /* 16px = 1rem */
+  overflow: auto;
+  border-radius: 20px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 50vh;
+  width: 50vw;
+  opacity: 0.7;
+  /* 0 to 1 */
+}
+
+/* display */
+/* position */
+/* Combinators */
+/* Pseudo class */
+/* Pseudo Elements */
